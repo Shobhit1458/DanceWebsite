@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#intro {
+    height: 50px; 
+    overflow: hidden;
+    position: relative;
+    
+    }
+    #intro p {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+    
+    -moz-transform:translateX(100%);
+    -webkit-transform:translateX(100%); 
+    transform:translateX(100%);
+    
+    -moz-animation: scroll-left 20s linear infinite;
+    -webkit-animation: scroll-left 20s linear infinite;
+    animation: scroll-left 20s linear infinite;
+    }
+    
+    @-moz-keyframes scroll-left {
+    0% { -moz-transform: translateX(100%); }
+    100% { -moz-transform: translateX(-100%); }
+    }
+    @-webkit-keyframes scroll-left {
+    0% { -webkit-transform: translateX(100%); }
+    100% { -webkit-transform: translateX(-100%); }
+    }
+    @keyframes scroll-left {
+    0% { 
+    -moz-transform: translateX(100%); 
+    transform: translateX(100%); 
+    }
+    100% { 
+    -moz-transform: translateX(-100%); 
+    -webkit-transform: translateX(-100%); 
+    transform: translateX(-100%); 
+    }
+    }
+#intro p{
+        padding-top: 340px;
+}
+    
+#nav{
+    padding: 25px 25px;
+    background-color: black;
+}
+#nav ul{ 
+    display: flex;  
+    list-style: none;
+    justify-content: center;
+}
+#nav li a{
+    text-decoration: none;
+    padding: 10px 40px;
+    font-size: 1.1rem;
+    color: white;
+    /* margin-top: 10px; */
+}
+#nav li a:hover{
+    background-color: white;
+    border-radius: 20px;
+    color: black;
+}
+
+#intro{
+   height: 755px;
+   background: center/cover no-repeat url("/static/bg.jpg");
+   display: flex;
+   font-family: 'Bebas Neue', cursive;
+   /* justify-content: center; 
+   align-items: center; */
+   color:white;
+   font-size: 2.7rem;
+
+}
+#sponser{
+   height: 100px;
+   background-color: black;
+}
+#cardsection{
+   height: 300px;
+   /* background-color: brown; */
+}
+.card{
+    display: inline-block;
+    border: 4px solid black;
+    border-radius: 10px ;
+    width: 30%;
+    margin: 25px 20px;
+    height: 250px;
+    background-color: black;
+    color: white;
+}
+.card h3{
+    text-align: center;
+    padding-top: 15px;
+}
+#foot{
+   height: 30px;
+   background-color: black;
+   color: white;
+}
+.logo{
+    display: flex;
+    flex-direction: row ;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    padding: 10px;
+}
+#sponser h2{
+    text-align: center;
+    color: white;
+}
+.cardbox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 25px;
+}
+#cardsection img {
+     height:160px;
+   }
+#icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#foot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

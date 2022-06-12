@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Teko&display=swap');
+*{
+    background-color: black;
+}
+h1{
+    text-align: center;
+    color: white;
+    margin: 50px;
+    font-family: 'Teko', sans-serif;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 120px;
+}
+.input{
+    width: 40%;
+    padding: 10px;
+    margin: 20px;
+    color: white;
+    border-radius: 10px;
+    border:2px solid white;
+    outline: none ;
+}
+.btn{
+    padding:10px;
+    width: 20%;
+    border: 2px solid white;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    margin-top: 30px;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+}
